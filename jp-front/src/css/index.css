@@ -1,0 +1,1052 @@
+@import url('https://fonts.googleapis.com/css?family=Archivo');
+@import 'bootstrap/dist/css/bootstrap.min.css';
+@import '~font-awesome/css/font-awesome.min.css';
+
+.App {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  /* Center items vertically */
+  /* Center items horizontally */
+  /* Set height to 100% of the viewport height */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+body {
+  margin: 0;
+  font-family: 'Archievo', sans-serif;
+  background:
+    linear-gradient(to bottom, rgba(105, 18, 18, 1) 0%, rgba(0, 0, 0, 0.3) 70%) no-repeat center fixed,
+    linear-gradient(to bottom, rgba(105, 18, 18, 0.3) 0%, rgba(0, 0, 0, 0.8) 70%) no-repeat center fixed,
+    url("../../public/register/bg.jpeg") no-repeat center fixed;
+  background-size: cover, cover, cover;
+  margin: 0;
+}
+
+.tooltip {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: red;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+/* Login Page and body */
+.main-container {
+  background-color: rgba(51, 10, 10, 0.3);
+  padding: 5px 5px 5px 5px;
+  margin-top: 15px;
+  text-align: center;
+  width: 100%;
+  height: auto;
+  border: 1px solid rgba(105, 18, 18, 0.3);
+  border-radius: 7px;
+}
+
+
+
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: rgb(80, 46, 46);
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+
+.remember-me {
+  /* margin-bottom: 10px; */
+  color: #d2abab;
+  cursor: pointer;
+  text-align: left;
+  padding-top: 5px;
+  padding-left: 10px;
+}
+
+.remember-me .form-check-input[type="checkbox"] {
+  /* margin-bottom: 10px; */
+  border-color: #d2abab;
+  background-color: transparent;
+  color: #d2abab;
+}
+
+.remember-me .form-check-input[type="checkbox"]:checked {
+  /* margin-bottom: 0px; */
+  background-color: red;
+  border-color: #d2abab;
+}
+
+.label {
+  color: rgb(218, 190, 190);
+}
+
+.signup {
+  color: rgb(218, 190, 190);
+}
+
+.signup:hover {
+  color: red;
+}
+
+
+/* <Container className="main-container"> */
+.text-center {
+  text-align: center;
+}
+
+.text-white {
+  color: white;
+}
+
+h1 {
+  margin-top: 30px;
+}
+
+h1 span {
+  margin-left: 10px;
+  color: red;
+  transition: color 0.3s;
+  cursor: text;
+}
+
+h1 span:hover {
+  color: white;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.main-container .btn {
+  font-size: 20px;
+  border-radius: 20px;
+  width: 100%;
+  height: 50px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  background-color: transparent;
+  border-color: #8d4b4b;
+  transition: all 0.3s;
+}
+
+.main-container .btn-outline-danger {
+  color: #ffffff;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.main-container .btn-outline-danger:hover {
+  background-color: red;
+  border-color: red;
+}
+
+.social-button img {
+  margin-right: 20px;
+  width: 30px;
+  margin: flex;
+}
+
+.social-button:hover {
+  background-color: red;
+  border-color: #8d4b4b;
+  color: red;
+  transform: scale(1.1);
+}
+
+.social-button:focus {
+  outline: none;
+}
+
+.social-button:active {
+  transform: scale(0.95);
+}
+
+/* TEXT INPUT CONTAINER */
+.main-container .text-input.container {
+  padding-top: 10px;
+}
+
+/* Email */
+.email-input {
+  width: 100%;
+  margin-top: 10px;
+  padding: 12px;
+  border-radius: 20px;
+  border: 1px solid #8d4b4b;
+  background-color: transparent;
+}
+
+.email-input:focus {
+  outline: none;
+  border-color: #8d4b4b;
+}
+
+/* Password */
+.main-container .main-content .form-control {
+  color: white;
+  width: 100%;
+  margin-top: 0;
+  padding: 12px;
+  border-radius: 20px;
+  border: 1px solid #8d4b4b;
+  background-color: transparent;
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: #8d4b4b;
+}
+
+.main-container .form-text {
+  color: #9e8585;
+  margin-bottom: 20px;
+}
+
+/* forgotpassword */
+.forgotpassword {
+  color: #d2abab;
+}
+
+.login-button {
+  margin-top: 30px;
+  border-radius: 20px;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 10px;
+  background-color: transparent;
+  border-color: #8d4b4b;
+}
+
+.login-options a {
+  color: #d2abab;
+  text-decoration: none;
+}
+
+.main-container p {
+  color: #d2abab;
+}
+
+
+/* Register page */
+.Register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: rgba(51, 10, 10, 0.3);
+  border: 1px solid rgba(105, 18, 18, 0.3);
+  border: 1px solid rgba(185, 128, 128, 0.3);
+  padding: 20px;
+  border-radius: 7px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+
+.Register-social-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-width: 1px;
+  width: 350px;
+  margin-right: 50px;
+  font-size: 150%;
+  margin-bottom: 150px;
+  background-color: transparent;
+}
+
+.buttonContent {
+  background-color: transparent;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.Register-signup-form {
+  background-color: transparent;
+  color: white;
+  text-align: center;
+  align-items: center;
+  margin-left: 50px;
+}
+
+.Register-container h1 {
+  font-size: 50px;
+  color: #ffffff;
+}
+
+.Register-container .label {
+  color: rgb(218, 190, 190);
+  text-align: left;
+  font-weight: 500;
+}
+
+.Register-container .label p {
+  font-size: 50px;
+}
+
+.Register-container p {
+  font-weight: 500;
+  font-size: 50px;
+  color: #ffffff;
+}
+
+.Register-h2 {
+  font-size: 60px;
+  color: #ffffff;
+
+}
+
+.Register-social-button {
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border-radius: 20px;
+  margin-top: 15px;
+  flex-direction: row;
+}
+
+.Register-social-button p {
+  color: white;
+  margin: 0;
+  font-size: 10px;
+  text-align: left;
+}
+
+.Register-social-container a {
+  color: white;
+  /* text-decoration: none; */
+  font-size: 15px;
+}
+
+.Register-google,
+.Register-facebook,
+.Register-apple {
+  width: 30px;
+  height: 30px;
+}
+
+.Register-textbox {
+  display: flex;
+  flex-direction: column;
+  border-radius: 3px;
+  width: 400px;
+  padding: 5px;
+}
+
+.Register-container .Register-signup-form .Register-button {
+  background-color: none;
+}
+
+.Register-button:hover {
+  background-color: red;
+  color: white;
+  border-color: #8d4b4b;
+}
+
+
+.Register-signup-text {
+  font-size: 40px;
+}
+
+
+.Register-container .loginNavigate {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0;
+}
+
+.Register-container .loginNavigate p,
+.Register-container .loginNavigate a {
+
+  font-size: 15px;
+  margin: 0;
+  padding: 2px;
+  color: #d2abab;
+  font-weight: 200;
+}
+
+
+/* login link below */
+.loginNavigate a:hover {
+  color: red;
+}
+
+.Register-signup-form .Register-textbox .error-message {
+  color: #ff3f3f;
+  font-size: 12px;
+  text-align: left;
+}
+
+
+#page-content-wrapper {
+  min-width: 0;
+  width: 100%;
+}
+
+.transparent-bg {
+  background: transparent;
+}
+
+#dashboard-bg {
+  margin-block-end: auto;
+  height: calc(100vh - 17px);
+  overflow-y: auto;
+}
+
+.dashboard-nav {
+  margin-right: 10px;
+  display: flex;
+}
+
+
+.nav-content {
+  color: white;
+  border-right: white 1px solid;
+  display: flex;
+}
+
+
+.nav-button-container {
+  padding: 10px;
+  margin-right: 0px;
+}
+
+.nav-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* NEW SIDEBAR FOR ADMINMANAGEUSERS */
+/* Sidebar styles */
+/* admin.css */
+
+/* Sidebar styles */
+#sidebar a:hover {
+  font-weight: 500;
+}
+
+/* Table styles */
+.table-danger th {
+  background-color: red;
+  color: transparent;
+}
+
+.table-danger th :hover {
+  background-color: transparent;
+  color: red;
+  cursor: pointer;
+}
+
+/* Main content area styles */
+.main-content h1:hover {
+  color: red;
+}
+
+.approve-button {
+  margin-right: 10px;
+}
+
+/* MANAGE USERS */
+.manage-users {
+  display: 'flex';
+  flex-direction: column;
+  align-items: start;
+  top: 0;
+}
+
+.manage-users h1 {
+  font-size: 50px;
+  transition: color 0.3s;
+  text-decoration: none;
+}
+
+
+/* Styling for text-white */
+.manage-users .text {
+  color: #c98c8c !important;
+  text-shadow: 1px 1px 2px #130f10;
+}
+
+/* Styling for text-dark */
+.manage-users .text-dark {
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  /* text-shadow: 1px 1px 3px #f0efef; */
+  color: #f5f5f8 !important;
+}
+
+.sub-heading {
+  color: #ff0000;
+  text-shadow: 1px 1px 2px #f0f0f0;
+  transition: color 0.3s;
+  text-decoration: none;
+}
+
+/* Styling for text-danger */
+.manage-users .text-danger {
+  color: #dc3545 !important;
+}
+
+/* Styling for links */
+.manage-users a {
+  text-decoration: none;
+  color: #ffffff;
+  transition: color 0.3s;
+}
+
+.manage-users a:hover {
+  color: #f02020;
+}
+
+/* Styling for columns */
+.manage-users .col {
+  margin-bottom: 10px;
+}
+
+/* Styling for NavLink */
+/* .manage-users .NavLink {
+  font-weight: bold;
+  font-size: 30px;
+  transition: color 0.3s;
+  text-decoration: none;
+} */
+
+/* Styling for Table */
+.manage-users .table-danger th {
+  background-color: #4e020a;
+}
+
+/* Styling for table cells */
+.manage-users .table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* Styling for table hover effect */
+.manage-users .table-hover tbody tr:hover {
+  background-color: rgba(255, 255, 255, 0.075);
+
+}
+
+.manage-users h1 {
+  font-size: 50px;
+  transition: color 0.3s;
+  text-decoration: none;
+}
+
+.manage-users .container-md {
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #290206 !important;
+  border: solid 1px #4e080f;
+  /* Corrected border-color property */
+  box-shadow: 0 0 10px rgba(36, 14, 14, 0.678);
+  /* Corrected box-shadow property */
+}
+
+
+.manage-users .col-link {
+  color: #ff0000;
+  font-weight: bold;
+  font-size: 30px;
+  transition: color 0.3s;
+  text-decoration: none;
+  margin-right: 50px;
+  position: relative;
+  /* Ensure relative positioning for pseudo-element */
+}
+
+.manage-users .col-link:hover {
+  color: #ffffff;
+}
+
+.manage-users .col-link:focus::after {
+  content: '';
+  /* Add pseudo-element for underline */
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  /* Adjust as needed */
+  width: 100%;
+  height: 2px;
+  background-color: rgb(243, 243, 243);
+}
+
+.manage-users .table-danger th {
+  background-color: #4e080f;
+  color: white;
+  border-color: #000000;
+}
+
+.manage-users .table-danger td,
+.manage-users .table-danger th {
+  border-color: #d1bbbd;
+}
+
+/* style for IDK */
+.heading {
+  font-size: 50px;
+  transition: color 0.3s;
+  text-decoration: none;
+}
+
+.card {
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #333;
+}
+
+.nav-link {
+  font-weight: bold;
+  font-size: 30px;
+  transition: color 0.3s;
+  text-decoration: none;
+  margin-right: 50px;
+}
+
+
+/* Search bar for manage users */
+#search {
+  background-color: transparent;
+  color: white;
+  width: 25%;
+  margin-bottom: 20px;
+  float: right;
+  border: 2px solid #5c5757;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+#search::placeholder {
+  color: #999;
+}
+
+
+
+/* button DELETE REJECT APPROVE */
+/* PendingRequests.css */
+.user-row:hover {
+  background-color: #000000 !important;
+  /* Change background color on hover */
+}
+
+.approve-btn {
+  background-color: #08b12f !important;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  margin-right: 5px;
+}
+
+.reject-btn {
+  background-color: #8a141f !important;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  margin-right: 5px;
+}
+
+.delete-btn {
+  background-color: #ff0000 !important;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+
+/* Styling for table */
+.table-background {
+  border-radius: 5px;
+  background-color: white;
+  width: 100vh
+}
+
+.clickable-row {
+  cursor: pointer;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+  color: white !important;
+}
+
+
+/* User Side Bar */
+.user-sidebar {
+  border-right: 1px solid #800000;
+}
+
+.sub-header {
+  color: #dd0000;
+  cursor: default !important;
+}
+
+/* HOMEPAGE */
+.home-page {
+  background:
+    url("../../public/register/bg-home.png") no-repeat center fixed !important;
+  background-size: cover !important;
+  height: 100vh;
+}
+
+.search-bar {
+  background: #ffffff9e !important;
+  border: 1px solid #800000 !important;
+  border-radius: 10px !important;
+}
+
+.search-bar-input {
+  background: transparent !important;
+  border: none !important;
+  color: white !important;
+}
+
+.search-bar-input:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.home-page-content {
+  padding-left: 0 !important;
+}
+
+.home-page-text {
+  color: white;
+}
+
+.artist-item-container {
+  overflow: auto;
+  width: 900px;
+  height: 230px;
+}
+
+.artist-item {
+  height: 100%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 2%;
+  border-radius: 5px;
+  background-color: #ffffff9e;
+  border: 1px solid #ffffff;
+  color: #800000;
+}
+
+.artist-item:hover {
+  background-color: #bababa;
+  color: #000000;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+/* For Chrome and Safari */
+/* Width of the scrollbar */
+.artist-item-container::-webkit-scrollbar {
+  width: 10px;
+  height: 5px;
+  border-radius: 10px;
+}
+
+/* Track */
+.artist-item-container::-webkit-scrollbar-track {
+  background: #d3d3d351;
+  border-radius: 10px;
+
+}
+
+/* Handle */
+.artist-item-container::-webkit-scrollbar-thumb {
+  background: #bbbbbb;
+  border-radius: 10px;
+
+}
+
+/* Handle on hover */
+.artist-item-container::-webkit-scrollbar-thumb:hover {
+  background: #dadada;
+  border-radius: 10px;
+
+}
+
+/* SONG ITEM */
+.song-item-container {
+  border-top: 1px solid #ffffff9f;
+  border-bottom: 1px solid #ffffff9f;
+  color: #fff;
+}
+
+.album-container-header {
+  color: #fff;
+  font-weight: 600;
+}
+
+.album-item-container {
+  border-top: 1px solid #ffffff9f;
+  border-bottom: 1px solid #ffffff9f;
+  overflow: auto;
+  height: 60vh;
+  color: #fff;
+  background: #1f1f1f;
+}
+
+.album-item-container::-webkit-scrollbar {
+  width: 5px;
+  /* Width of the scrollbar */
+  border-radius: 10px;
+}
+
+.album-item-container::-webkit-scrollbar-track {
+  background: rgb(206, 206, 206);
+  border-radius: 10px;
+  /* Color of the track */
+}
+
+.album-item-container::-webkit-scrollbar-thumb {
+  background: #888;
+  /* Color of the scroll thumb */
+  border-radius: 10px;
+
+}
+
+.album-item-container::-webkit-scrollbar-thumb:hover {
+  background: #555;
+  /* Color of the scroll thumb on hover */
+  border-radius: 10px;
+
+}
+
+.album-item {
+  border-top: 1px solid #ffffff9f;
+  border-bottom: 1px solid #ffffff9f;
+  color: #fff;
+}
+
+.album-item-description {
+  color: #fff;
+  /* font-size: 12px; */
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  align-items: center;
+}
+
+.album-item a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.album-item a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.song-item {
+  color: #fff;
+  /* should be redundant and to be removed*/
+}
+
+.song-item:hover {
+  background: #f5f5f555;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+
+/* RIGHT SIDE BAR */
+.right-sidebar {
+  background: #101011;
+}
+
+/* ARTIST PAGE */
+
+/* PLAYER */
+.user-player-bar {
+  background: #130f10 !important;
+  z-index: 1;
+  border-top: 1px solid #800000;
+}
+
+.user-player {
+  background: #130f10 !important;
+  z-index: 1;
+}
+
+.user-player .rhap_main-controls-button {
+  color: #fff !important;
+}
+
+.rhap_main {
+  color: #fff !important;
+}
+
+.rhap_time {
+  color: #D9D9D9 !important;
+}
+
+.w-85 {
+  width: 86%;
+}
+
+.invisible-text {
+  color: transparent;
+}
+
+/* UPLOAD MODAL */
+
+.custom-dropzone-text {
+  color: #0000006c;
+  font-size: 12px;
+  padding: 20px;
+  justify-content: center;
+  width: 200px;
+}
+
+/* Custom Dropzone */
+.custom-dropzone {
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
+  background-color: #eaeaea;
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.media-dropzone {
+  height: 300px;
+  /* Adjust as needed */
+  overflow-y: auto;
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #eaeaea;
+  text-align: center;
+  cursor: pointer;
+}
+
+.media-dropzone::-webkit-scrollbar {
+  width: 8px;
+}
+
+.media-dropzone::-webkit-scrollbar-track {
+  background: #f4f4f4;
+}
+
+.media-dropzone::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 20px;
+  border: 2px solid #f4f4f4;
+}
+
+.btn-preview-delete {
+  border-radius: 25px !important;
+  width: 3.5vh;
+  height: 3.5vh;
+}
+
+.upload-preview {
+  width: 450px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  white-space: nowrap;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.upload-preview:hover {
+  animation: marquee 7s linear infinite;
+}
+
+.player-borderless {
+  box-shadow: none !important;
+}
+
+.files-view {
+  cursor: default;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.album-cover-preview {
+  height: 250px;
+  width: 250px;
+  object-fit: contain;
+  color: rgb(240, 240, 240);
+}
+
+/* CUSTOM SCROLLBAR */
+/* Width */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+.custom-scrollbar::-webkit-scrollbar-track {
+  /* background: #f1f1f1;  */
+}
+ 
+/* Handle */
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #55555578; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+@keyframes bounce {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes marquee {
+
+  0%,
+  100% {
+    text-indent: 0%
+  }
+
+  50% {
+    text-indent: -20%
+  }
+
+}

@@ -1,0 +1,29 @@
+.sb-bg {
+    background-color: #1e1e1e;
+}
+
+.navitem{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+#sidebar a:hover {
+    font-weight: 500;
+    color: #C70000;
+}
+
+/* sidebar.css */
+.sidebar-content {
+    border-top: 0; /* Remove top border */
+  }
+  
+.sb-lib {
+    font-weight: 700;
+    font-size: 24px;
+    padding-left: 10px;
+}
+
+.menu-icon {
+    margin-right: 8px; /* Adjust the margin-right value as needed */
+  }
